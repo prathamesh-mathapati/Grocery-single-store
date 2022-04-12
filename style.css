@@ -3,18 +3,62 @@
   padding: 0%;
 }
 html {
-  font-family: "Inter", sans-serif;
+  font-family: "laymedium", sans-serif;
 }
 main {
   background-color: #f9f9f9;
 }
+
+@font-face {
+  font-family: sfprobold;
+  src: url("./font/SFPRODISPLAYBOLD.OTF ");
+}
+
+@font-face {
+  font-family: blackitalic;
+  src: url("./font/SFPRODISPLAYBLACKITALIC.OTF");
+}
+
+@font-face {
+  font-family: heavyitalic;
+  src: url("./font/SFPRODISPLAYHEAVYITALIC.OTF");
+}
+
+@font-face {
+  font-family: lightitalic;
+  src: url("./font/SFPRODISPLAYLIGHTITALIC.OTF");
+}
+
+@font-face {
+  font-family: laymedium;
+  src: url("./font/SFPRODISPLAYMEDIUM.OTF");
+}
+
+@font-face {
+  font-family: layregular;
+  src: url("./font/SFPRODISPLAYREGULAR.OTF");
+}
+
+@font-face {
+  font-family: laysemibold;
+  src: url("./font/SFPRODISPLAYSEMIBOLDITALIC.OTF");
+}
+
+@font-face {
+  font-family: laythinitalic;
+  src: url("./font/SFPRODISPLAYTHINITALIC.OTF");
+}
+
+@font-face {
+  font-family: layultraitalic;
+  src: url("./font/SFPRODISPLAYULTRALIGHTITALIC.OTF");
+}
+
 .main-header {
   display: flex;
-  gap: 5rem;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   flex-wrap: wrap;
-
   padding: 2rem 0.5rem;
 }
 .grocery {
@@ -23,10 +67,11 @@ main {
 .location {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-.grocery-logo {
-  width: 14rem;
+.location form select {
+  background-color: #fff;
+  border: none;
 }
 .search-bar form {
   display: flex;
@@ -38,7 +83,7 @@ main {
   width: 42rem;
   height: 3rem;
   border: none;
-  box-shadow: 1px 0px 1px 1px gray;
+  background-color: #f6f6fd;
 }
 .search-img {
   width: 3rem;
@@ -53,7 +98,13 @@ main {
   gap: 1.5rem;
   align-items: center;
 }
-
+.my-account {
+  display: flex;
+}
+.my-account form select {
+  border: none;
+  background-color: #fff;
+}
 .first-section,
 .store-location {
   font-size: 0.7rem;
@@ -63,7 +114,7 @@ main {
 }
 .first-section {
   padding: 0 6rem;
-  gap: 15rem;
+  justify-content: space-around;
 }
 .store-address {
   color: grey;
@@ -72,7 +123,11 @@ main {
   font-size: 0.9rem;
 }
 .more {
+  padding-left: 0rem;
   color: #3bd28c;
+}
+.anurag {
+  display: flex;
 }
 .first-section form {
   display: flex;
@@ -127,6 +182,11 @@ main {
   color: #fff;
   border: none;
   border-radius: 27px;
+  cursor: pointer;
+}
+.button-orer:hover,
+.button-orer:active {
+  background-color: red;
 }
 
 .left-arrow {
@@ -157,24 +217,18 @@ main {
 .items {
   display: flex;
   justify-content: space-between;
-  /* border: 2px solid; */
 }
-
-/* .items :hover,
-.items :vertical {
-  transform: translateY(-1.2rem);
-  box-shadow: px 1px 3px 8px rgb(228, 225, 225);
-} */
 
 .vegtebles:hover {
   transform: translateY(-1.2rem);
-  box-shadow: px 1px 3px 8px rgb(228, 225, 225);
+  box-shadow: 0px 10px 30px #00000008;
 }
 
 .vegtebles {
   padding: 2rem 3.5rem;
-  box-shadow: 0px 1px 3px 8px rgb(247, 243, 243);
+  box-shadow: 0px 10px 30px #00000008;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .text {
@@ -182,6 +236,7 @@ main {
   justify-content: space-between;
   font-size: 3rem;
   position: relative;
+  justify-content: space-between;
 }
 .fourth-section {
   padding: 3rem;
@@ -189,16 +244,20 @@ main {
 .fourth-section h1 {
   padding: 1rem;
 }
+.view:hover {
+  background-color: red;
+}
 .view {
-  position: absolute;
   background-color: #3bd28c;
   color: #fff;
-  justify-items: center;
+  justify-content: space-around;
   text-align: center;
   padding: 0.5rem 1.5rem;
   border-radius: 27px;
   font-size: 1rem;
-  margin-left: 80rem;
+  /* margin-left: 80rem; */
+  cursor: pointer;
+  border: none;
 }
 
 .off {
@@ -229,9 +288,19 @@ main {
   display: flex;
   justify-content: space-between;
 }
+
+.prodects:active {
+  transform: translateY(-1.2rem);
+  box-shadow: 0px 10px 30px #00000008;
+}
+.prodects-1:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0px 10px 30px #00000008;
+}
 .prodects-1 {
+  box-shadow: 0px 10px 30px #00000008;
+
   padding: 2rem;
-  box-shadow: 0px 1px 3px 8px rgb(247, 243, 243);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -259,6 +328,9 @@ main {
   display: flex;
   justify-content: right;
   border-radius: 20px;
+}
+.fifth-section:hover {
+  opacity: 0.9;
 }
 .fifth-text {
   display: flex;
@@ -311,13 +383,19 @@ main {
   box-shadow: 0px 9px 9px 0px #a9acaa;
   padding-bottom: 1rem;
   border-radius: 20px;
+  width: 32rem;
 }
 .meal-img {
-  width: 32rem;
+  width: 100%;
+  cursor: pointer;
+}
+.meal-img:hover {
+  opacity: 0.7;
 }
 .meal-text {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   padding: 1rem;
   align-content: space-around;
 }
@@ -332,6 +410,9 @@ main {
   padding-top: 1rem;
   color: #3bd28c;
 }
+.how-dose {
+  padding: 5rem;
+}
 .how-dose h2 {
   display: flex;
   justify-content: center;
@@ -340,12 +421,12 @@ main {
 }
 .how-dose h2 p {
   color: #3bd28c;
-  /* gap: 8rem; */
 }
 
 .dose-about {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
   gap: 7rem;
 }
 .dose {
