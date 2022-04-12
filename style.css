@@ -269,6 +269,10 @@ main {
   border-radius: 27px;
   padding: 0.5rem;
 }
+.add-card:hover {
+  background-color: red;
+  cursor: pointer;
+}
 .add-card {
   background-color: #ffbb44;
   color: #fff;
@@ -380,7 +384,8 @@ main {
 .meal {
   font-size: 1rem;
   width: min-content;
-  box-shadow: 0px 9px 9px 0px #a9acaa;
+  box-shadow: 0px 10px 30px #00000008;
+
   padding-bottom: 1rem;
   border-radius: 20px;
   width: 32rem;
@@ -411,7 +416,7 @@ main {
   color: #3bd28c;
 }
 .how-dose {
-  padding: 5rem;
+  padding: 2rem;
 }
 .how-dose h2 {
   display: flex;
