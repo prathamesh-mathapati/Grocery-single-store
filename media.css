@@ -46,6 +46,9 @@
     left: 42% !important;
     width: 12%;
   }
+  .meal {
+    width: 90%;
+  }
   .account {
     position: absolute;
     top: -9999px;
