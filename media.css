@@ -34,6 +34,9 @@
 }
 
 @media (max-width: 888px) {
+  html {
+    position: static;
+  }
   .gajert {
     width: 22% !important;
   }
