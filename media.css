@@ -90,8 +90,9 @@
   html {
     font-size: 50% !important;
   }
+
   .first-section {
-    justify-content: center !important;
+    padding-bottom: 1rem !important;
   }
   .boy {
     left: 61%;
@@ -108,8 +109,10 @@
 }
 @media (max-width: 500px) {
   html {
+    overflow: hidden !important;
     font-size: 39% !important;
   }
+
   .first-section :nth-child(6) {
     position: absolute;
     top: -9999px;
