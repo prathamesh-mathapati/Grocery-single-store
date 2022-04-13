@@ -70,6 +70,9 @@
   .prodects-1 {
     align-items: center;
   }
+  .first-section {
+    padding-bottom: 2rem !important;
+  }
 
   .off {
     align-items: start;
@@ -91,9 +94,6 @@
     font-size: 50% !important;
   }
 
-  .first-section {
-    padding-bottom: 2rem !important;
-  }
   .boy {
     left: 61%;
   }
