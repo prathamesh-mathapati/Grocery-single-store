@@ -1,0 +1,48 @@
+@media (max-width: 1476px) {
+  .search-bar {
+    width: 29rem;
+  }
+  .gobu {
+    left: 40% !important;
+  }
+  .gajert {
+    top: 8rem !important;
+    margin: -9rem !important;
+  }
+  .meal {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 63.5% !important;
+  }
+  .grocery-logo {
+    width: 8rem;
+  }
+  .search-bar {
+    width: 10rem;
+  }
+  .gobu {
+    left: 32% !important;
+  }
+  .fomr-1 {
+    width: 4rem;
+  }
+  .account {
+    display: none;
+  }
+  .group {
+    width: 54rem !important;
+  }
+}
+
+@media (max-width: 820px) {
+}
+
+/* .stories-1 {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+} */
