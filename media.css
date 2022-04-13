@@ -27,22 +27,119 @@
   .gobu {
     left: 32% !important;
   }
-  .fomr-1 {
-    width: 4rem;
-  }
-  .account {
-    display: none;
-  }
+
   .group {
     width: 54rem !important;
   }
 }
 
-@media (max-width: 820px) {
-}
+@media (max-width: 888px) {
+  .gajert {
+    width: 22% !important;
+  }
+  .boy {
+    position: absolute;
+    left: 40%;
+    bottom: 0%;
+  }
+  .gobu {
+    left: 42% !important;
+    width: 12%;
+  }
+  .account {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    margin: 0 0;
+  }
+  .first-section :last-child {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    margin: 0 0;
+  }
+  .stories-1 {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .prodects {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .prodects-1 {
+    align-items: center;
+  }
 
-/* .stories-1 {
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
-} */
+  .off {
+    align-items: start;
+  }
+  .group {
+    width: 42rem !important;
+  }
+  .logos :nth-child(5),
+  .logos :nth-child(3),
+  .logos :nth-child(4) {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    margin: 0 0;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 50% !important;
+  }
+  .first-section {
+    justify-content: center !important;
+  }
+  .boy {
+    left: 61%;
+  }
+  .gajert {
+    left: 100% !important;
+  }
+  .group {
+    width: 34rem !important;
+  }
+  .first-section select {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 39% !important;
+  }
+  .first-section :nth-child(6) {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    margin: 0 0;
+  }
+  .gajert {
+    left: 103% !important;
+  }
+  .location select {
+    font-size: 1.5rem;
+  }
+  .first-section select {
+    font-size: 1.5rem;
+  }
+  .form-1 select :nth-child(6),
+  .form-1 select :nth-child(5) {
+    visibility: hidden;
+  }
+  .items {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .store-location {
+    position: relative;
+  }
+  .logo-1 {
+    width: 12rem;
+  }
+  .footer-img {
+    width: 16rem;
+  }
+}
